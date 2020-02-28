@@ -28,6 +28,12 @@ run_12ECG_classifier<-function(data,hea_data,classes,model){
 
 def_peaks<-function(ecg,fs,gain){
   
+        # The code uses an R code similar to Python Online and Offline ECG QRS Detector based 
+        # on the Pan-Tomkins algorithm (https://github.com/c-labpl/qrs_detector). 
+        # The code is a sample code for Physionet Challenge 2020 and not for any other experimental purposes. 
+        # MIT License. Copyright (c) 2020. Andoni Elola (Universidad del Pais Vasco & Emory University).
+  
+  
         # Method responsible for extracting peaks from loaded ECG measurements data through measurements processing.
         # This implementation of a QRS Complex Detector is by no means a certified medical tool and should not be used in health monitoring. 
         # It was created and used for experimental purposes in psychophysiology and psychology.
